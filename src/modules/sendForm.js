@@ -43,10 +43,10 @@ export const sendForm = () => {
 
         list.forEach(input => {
             if(input.closest('[name=fio]')) {
-                successName = /^[а-яёА-ЯЁ]+$/i.test(input.value)
+                successName = /^[а-яёА-ЯЁ]{2,}$/i.test(input.value)
             }
             if(input.closest('[name=tel]')) {
-                successPhone = /^[0-9\+*]+$/.test(input.value)
+                successPhone = /^[+]?[0-9]{6,16}$/.test(input.value)
             }    
             })
         if (successName && successPhone){

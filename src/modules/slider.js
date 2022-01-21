@@ -38,14 +38,18 @@ export const slider = () => {
             }
         })
 
+        startSlide()
+        window.addEventListener('resize', startSlide)
         sliderContainer.addEventListener('mouseenter', () => {
             clearInterval(slideId)
         })
         sliderContainer.addEventListener('mouseleave',startSlide)
 
-        startSlide()
+        
         
     const push = document.querySelector('.push100')
     push.style.height = '100px'
     push.style.marginTop = '-5px'
+
+
 }

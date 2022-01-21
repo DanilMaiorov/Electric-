@@ -853,6 +853,7 @@ hr.white {
 .top-slider {
 	overflow: hidden;
 	height: 450px;
+	background: rgba(0, 0, 0, 0.7);
 }
 .top-slider .item {
 	overflow: hidden;
@@ -933,7 +934,7 @@ video#video_background {
 	.top-slider {
 		height: 520px;
 	}
-	.top-slider .table {
+/* 	.top-slider .table {
 		opacity: 0;
 		visibility: hidden;
 		-webkit-transform: scale(1.5);
@@ -943,7 +944,7 @@ video#video_background {
 		-webkit-transition: 0.5s;
 		-o-transition: 0.5s;
 		transition: 0.5s;
-	}
+	} */
 	.top-slider .table.active {
 		webkit-transform: scale(1);
 		-ms-transform: scale(1);
@@ -1235,25 +1236,3 @@ video#video_background {
 		clear: both;
 	}
 }
-/**** /. services section *****/
-/* .dot {
-	display: flex;
-	margin-top: 10px;
-	border: 2px solid rgb(122, 142, 255);
-	background:rgb(159, 173, 252) ;
-	cursor: pointer;
-	border-radius: 50%;
-	width: 15px;
-	height: 15px;
-}
-.dot:hover {
-	border: 2px solid rgba(7, 232, 210, 0.666);
-	cursor: pointer;
-	border-radius: 50%;
-	width: 15px;
-	height: 15px;
-}
-.dots {
-	display: flex;
-	justify-content: space-evenly;
-} */

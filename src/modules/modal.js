@@ -27,6 +27,7 @@ export const modal = () => {
             });
         })
     })
+    
     arrayModal.forEach(item => 
         item.addEventListener('click', (e) => {
         if(!e.target.closest('.modal-callback') || e.target.closest('.modal-close')) {

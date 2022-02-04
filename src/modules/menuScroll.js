@@ -29,6 +29,7 @@ export const menu = () => {
         arrowUp.style.opacity = '0' ;
         arrowUp.style.zIndex = '-999'; 
     }
+    console.log(scrollY);
     window.addEventListener('scroll', () => {
           if (scrollY >= 600) {
             arrowUp.style.zIndex = '999';

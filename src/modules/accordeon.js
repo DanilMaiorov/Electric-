@@ -1,11 +1,8 @@
 import { animate } from './helpers';
-
 export const accordeon = () => {
-
     const acc = document.querySelector('.accordeon')
     const accordeonItemActive = document.querySelectorAll('.accordeon .element')
     const textContent = document.querySelectorAll('.accordeon .element-content')
-
     accordeonItemActive.forEach(item => {
         item.classList.remove('active')
     })
@@ -20,7 +17,6 @@ export const accordeon = () => {
                 }
             })
         }
-
         if(e.target.closest('.title')) {
             const textItem = e.target.closest('.title')
             let content = textItem.nextElementSibling
